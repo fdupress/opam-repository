@@ -14,7 +14,10 @@ remove: [
   [make "uninstall"]
 ]
 depends: [
+<<<<<<< HEAD
   "conf-no-system-switch"
+=======
+>>>>>>> added packages/clangml/clangml.0.5.2
   "batteries"
   "deriving"
   "ANSITerminal"
@@ -22,6 +25,18 @@ depends: [
   "camlp4"
   "ocamlfind"
 ]
+<<<<<<< HEAD
 available: [
   ocaml-version >= "4.02.3"
+=======
+depexts: [
+  [["debian"] ["libboost-dev" "llvm-3.4-dev" "clang-3.4" "libclang-3.4-dev" "binutils-dev"]]
+  [["ubuntu"] ["libboost-dev" "llvm-3.4-dev" "clang-3.4" "libclang-3.4-dev" "binutils-dev"]]
+  [["gentoo"] ["dev-libs/boost" "sys-devel/llvm-3.4.1-r2" "sys-devel/clang-3.4.0-r100" "sys-devel/binutils"]]
+  # archlinux has no package providing llvm and clang 3.4.1
+  [["archlinux"] ["boost" "binutils"]]
+]
+available: [
+  ocaml-version >= "4.02.3" & !preinstalled
+>>>>>>> added packages/clangml/clangml.0.5.2
 ]
