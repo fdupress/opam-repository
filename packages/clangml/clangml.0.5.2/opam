@@ -24,6 +24,7 @@ depends: [
   "base-unix"
   "camlp4"
   "ocamlfind"
+  "ocamlbuild" {build}
 ]
 <<<<<<< HEAD
 available: [

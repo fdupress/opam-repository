@@ -25,6 +25,14 @@ depends: [
 depopts: [
   "cmdliner" {build}
   "maxminddb" {build}
+<<<<<<< HEAD
   "ssh" {build}
 ]
+=======
+  "libssh" {build}
+  "ocamlbuild" {build}
+]
+depexts: [["osx" "homebrew"] ["libmaxminddb"]]
+
+>>>>>>> bulk addition of 'ocamlbuild {build}' dependencies
 available: [ocaml-version >= "4.02.3" & os = "darwin"]
