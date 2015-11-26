@@ -1,14 +1,19 @@
-opam-version: "1"
+opam-version: "1.2"
 maintainer: "zoggy@bat8.org"
 authors: ["Maxence Guesdon"]
 homepage: "http://zoggy.github.io/stog/"
 license: "GNU General Public License version 3"
 doc: ["http://zoggy.github.io/stog/doc.html"]
-tags: ["publication" "web" "blog"]
+dev-repo: "https://github.com/zoggy/stog.git"
+bug-reports: "https://github.com/zoggy/stog/issues"
+
+tags: ["publication" "web" "blog" "website" "documentation"]
 build: [
   ["./configure" "--prefix" prefix]
   [make "stog_filter_parser.mli"]
   [make "all"]
+]
+install: [
   [make "install-lib" "install-share"]
 ]
 remove: [["ocamlfind" "remove" "stog"]]
@@ -20,6 +25,7 @@ depends: [
   "ocamlnet" {>= "3.6"}
   "higlo" { >= "0.4" }
 ]
+<<<<<<< HEAD
 depopts: ["js_of_ocaml" "xmldiff" "lwt" "websocket" "cstruct" "crunch"]
 ocaml-version: [>= "4.02.0"]
 conflicts: [
@@ -30,3 +36,16 @@ conflicts: [
   "websocket" {< "0.8.1"}
   "xmldiff" {< "0.3.0"}
 ]
+=======
+depopts: [
+  "js_of_ocaml"
+  "xmldiff"
+  "lwt"
+  "websocket"
+  "cstruct"
+  "crunch"
+]
+
+available: [ ocaml-version >= "4.02.1"]
+
+>>>>>>> upgrade stog.0.13.0 opam file to 1.2
