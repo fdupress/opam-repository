@@ -8,9 +8,13 @@ bug-reports: ""
 license: "GNU LGPL v3"
 build: [make "PREFIX=%{prefix}%" "install"]
 remove: [make "PREFIX=%{prefix}%" "uninstall"]
+<<<<<<< HEAD
 depends: [
   "ocamlfind" {build}
   "safa" {>= "1.3"}
   "ocamlbuild" {build}
 ]
+=======
+depends: ["ocamlfind" {build} "safa" {= "1.3"}]
+>>>>>>> updating descriptions of safa and symkat, and symkat dependency on safa
 available: [ ocaml-version >= "4.02.0"]
