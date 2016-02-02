@@ -18,7 +18,11 @@ depends: [
 =======
 build: [make "PREFIX=%{prefix}%"]
 install: [make "PREFIX=%{prefix}%" "install"]
+<<<<<<< HEAD
 uninstall: [make "PREFIX=%{prefix}%" "uninstall"]
+>>>>>>> fixing opam files
+=======
+remove: [make "PREFIX=%{prefix}%" "uninstall"]
 >>>>>>> fixing opam files
 depends: ["ocamlfind" {build} "safa" {= "1.3"}]
 >>>>>>> updating descriptions of safa and symkat, and symkat dependency on safa
