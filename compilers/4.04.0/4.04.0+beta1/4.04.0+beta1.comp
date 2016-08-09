@@ -1,6 +1,6 @@
 opam-version: "1"
 version: "4.04.0"
-src: "https://github.com/ocaml/ocaml/tarball/4.04"
+src: "https://github.com/ocaml/ocaml/tarball/4.04.0+beta1"
 build: [
   ["./configure" "-prefix" prefix "-with-debug-runtime"]
   [make "world"]
@@ -11,6 +11,5 @@ packages: [
   "base-unix"
   "base-bigarray"
   "base-threads"
-  "base-ocamlbuild"
 ]
 env: [[CAML_LD_LIBRARY_PATH = "%{lib}%/stublibs"]]

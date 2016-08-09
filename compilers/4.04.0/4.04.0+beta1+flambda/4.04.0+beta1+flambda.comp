@@ -1,8 +1,8 @@
 opam-version: "1"
-version: "4.05.0"
-src: "https://github.com/ocaml/ocaml/tarball/trunk"
+version: "4.04.0"
+src: "https://github.com/ocaml/ocaml/tarball/4.04.0+beta1"
 build: [
-  ["./configure" "-prefix" prefix "-with-debug-runtime"]
+  ["./configure" "-prefix" prefix "-with-debug-runtime" "-flambda"]
   [make "world"]
   [make "world.opt"]
   [make "install"]
