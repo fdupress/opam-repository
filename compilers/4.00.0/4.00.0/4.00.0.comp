@@ -1,10 +1,18 @@
 opam-version: "1"
 version: "4.00.0"
 src: "http://caml.inria.fr/pub/distrib/ocaml-4.00/ocaml-4.00.0.tar.gz"
+<<<<<<< HEAD:compilers/4.00.0/4.00.0/4.00.0.comp
 make: [
   "world"
   "opt"
   "opt.opt"
+=======
+build: [
+  ["sh" "./configure" "-prefix" prefix "-with-debug-runtime"]
+  [make "world"]
+  [make "world.opt"]
+  [make "install"]
+>>>>>>> do not use shell path hardcoded in ./configure:compilers/4.00.0/4.00.0+debug-runtime/4.00.0+debug-runtime.comp
 ]
 packages: [
   "base-unix"
