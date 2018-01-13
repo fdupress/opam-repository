@@ -25,18 +25,6 @@ depends: [
   "ocamlnet" {>= "3.6"}
   "higlo" { >= "0.4" }
 ]
-<<<<<<< HEAD
-depopts: ["js_of_ocaml" "xmldiff" "lwt" "websocket" "cstruct" "crunch"]
-ocaml-version: [>= "4.02.0"]
-conflicts: [
-  "crunch" {< "1.1.0"}
-  "cstruct" {< "0.3.1"}
-  "js_of_ocaml" {< "2.5"}
-  "lwt" {< "2.4.5"}
-  "websocket" {< "0.8.1"}
-  "xmldiff" {< "0.3.0"}
-]
-=======
 depopts: [
   "js_of_ocaml"
   "xmldiff"
@@ -48,4 +36,3 @@ depopts: [
 
 available: [ ocaml-version >= "4.02.1"]
 
->>>>>>> upgrade stog.0.13.0 opam file to 1.2
